@@ -1,0 +1,20 @@
+.jumbotron {
+    background-image: url("https://static1.squarespace.com/static/531cd765e4b05616ec377865/t/5817262629687f5a8ab82ea6/1477912110091/");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: fixed;
+    background-position-y: center;
+    background-position-x: center;
+    border-bottom: rgb(247, 187, 57);
+}
+.head
+h3 {
+    font-weight: bolder;
+}
+h1 {
+    font-family: 'Monoton';
+    color: rgb(247, 187, 57);
+    text-shadow: 2px 0 black, 1px 0 black, 0 2px black;
+}

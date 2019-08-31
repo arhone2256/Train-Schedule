@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+ 
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Train Schedule</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="jumbotron jumbotron-fluid text-center text-dark">
+        <h1 class="display-3">Train Scheduler</h1>
+    </div>
+    <div class="container">
+        <table class="table text-white border border-warning">
+            <thead class="head bg-warning text-dark p-2">
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+
+        <form class="container border border-warning pb-3 px-0 text-white">
+            <div class="bg-warning text-dark py-2 px-3">
+                <h3>Add Train</h3>
+            </div>
+            <br>
+            <div class="form-group px-3">
+                <label for="name">Train Name</label>
+                <input type="text" class="form-control" id="name-input" placeholder="">
+            </div>
+            <div class="form-group px-3">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination-input">
+            </div>
+            <div class="form-group px-3">
+                <label for="Frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency-input">
+            </div>
+            <div class="form-group px-3">
+                <label for="trainTime">Train Time (HH:MM)</label>
+                <input type="text" class="form-control" id="time-input" placeholder="HH:MM">
+            </div>
+            <div class="px-3">
+                <button type="submit" class="submit-btn btn-warning">Submit</button>
+            </div>
+        </form>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
